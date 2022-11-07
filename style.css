@@ -1,0 +1,60 @@
+*{
+        margin: 0;
+        padding:0;
+}
+.button{
+        display: block;
+        margin: 200px;
+        text-decoration: none;
+
+}
+.content{
+        background: #dddd;
+        padding: 10px 30px;
+       color: rgb(22, 4, 4);
+        position: relative;
+        transition: .3s all ease-in;
+        z-index: 5;
+        overflow: hidden;
+        display: inline-block;
+        text-transform: capitalize;
+        
+      
+}
+.content:before{
+        content: "";
+        position: absolute;
+        width: 50%;
+        height: 100%;
+        background-color: green;
+        top:0;
+        left: -50%;
+        transition: .3s all ease-in;
+        z-index: -5;
+      
+}
+.button:hover .content:before{
+        left: 0;
+}
+
+.content:hover{
+        background: none;
+        color: white;
+}
+
+.content:after{
+        content: "";
+        position: absolute;
+        width: 50%;
+        height: 100%;
+        background-color: green;
+        top:0;
+        right: -50%;
+        transition: .3s all ease-in;
+        z-index: -5;
+      
+}
+.button:hover .content:after{
+        right: 0;
+}
+
